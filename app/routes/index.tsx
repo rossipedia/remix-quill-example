@@ -15,7 +15,12 @@ export default function Index() {
       <h1>Welcome to Remix</h1>
 
       <ClientOnly>
-        {() => <Editor value={value} onChange={setValue} />}
+        {() => (
+          <Editor
+            value={value}
+            onChange={setValue}
+          />
+        )}
       </ClientOnly>
     </div>
   );
